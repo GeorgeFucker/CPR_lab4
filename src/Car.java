@@ -1,3 +1,4 @@
+import java.util.UUID;
 public class Car {
     private String id;
     private String brand;
@@ -6,9 +7,9 @@ public class Car {
     private String color;
     private int price;
     private long regNumber;
-    public Car(String id, String brand, String model, int year, String color, int price, long regNumber){
-
-        this.id = id;
+    public Car(String brand, String model, int year, String color, int price, long regNumber){
+        //String uniqueID = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
         this.brand = brand;
         this.model = model;
         this.year = year;
